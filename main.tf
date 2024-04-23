@@ -55,7 +55,7 @@ resource "google_compute_instance" "hashicat" {
     initialize_params {
       image = "ubuntu-os-cloud/ubuntu-2204-lts"
       labels = {
-        department = "devops"
+       
       }
     }
   }
@@ -74,6 +74,8 @@ resource "google_compute_instance" "hashicat" {
 
   labels = {
     name = "hashicat"
+     department = "devops"
+    billable = true
   }
 
 }
